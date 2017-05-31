@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/textViewBasicUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:focusable="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewAllUnit"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorTextBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="From"
+                    android:textSize="18dp"
+                    android:gravity="left"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <EditText
+                    android:id="@+id/edittextFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:digits="0123456789."
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/colorTextBlack"
+                    android:textColor="@color/colorTextBlack"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/buttonUnitList123"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:visibility="invisible"
+                    android:background="@drawable/ic_convert"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/edittextTo"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:editable="false"
+                    android:textSize="20sp"
+                    android:background="@null"
+                    android:textColor="@color/colorTextBlack"
+                    android:text="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/buttonUnitConverter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_convert"
+                   />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3mm"
+                android:visibility="gone"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/buttonUnitCalcualte1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:visibility="invisible"
+                    android:background="@drawable/ic_converter_icon" />
+
+                <Button
+                    android:id="@+id/buttonUnitCalcualte"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_converter_icon" />
+                <Button
+                    android:id="@+id/buttonUnitCalcualte2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="invisible"
+                    android:layout_weight="2"
+                    android:background="@drawable/ic_converter_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerConvertFrom"
+                    android:spinnerMode="dialog"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorTextBlack"
+                    android:prompt="@string/spinner_title_from"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    />
+                <TextView
+                    android:id="@+id/buttonUnitList122"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:visibility="invisible"
+                    android:background="@drawable/ic_convert" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerConvertTo"
+                    android:spinnerMode="dialog"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorTextBlack"
+                    android:prompt="@string/spinner_title_from"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                android:layout_marginTop="20dp"
+                >
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/button_list_fullreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/list" />
+                <TextView
+                    android:id="@+id/button122"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ic_convert" />
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/button_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/copy" />
+
+
+                <TextView
+                    android:id="@+id/button123"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ic_convert" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/button_list_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/share" />
+                <TextView
+                    android:id="@+id/button124"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ic_convert" />
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/button_list_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/ic_dialog_email" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/relativelayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ssscrollView"
+
+        >
+
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:layout_marginTop="10dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/textViewConversionFrom"
+    android:gravity="center"
+    android:textSize="16dp"
+    android:textStyle="bold"
+    android:textColor="@color/colorTextBlack"
+    android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/edittextConversionListvalue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:focusableInTouchMode="true"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextBlack"
+        android:layout_weight="1"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewConversionShortform"
+            android:gravity="bottom|right"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorTextBlack"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewConverterList"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colordialog"
+        android:layout_height="fill_parent">
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

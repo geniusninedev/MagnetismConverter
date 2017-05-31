@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d81b60</color>
+    <color name="colorPrimaryDark">#a00037</color>
+    <color name="colorPrimaryLight">#ff5c8d</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="appcolor">#1ab7b7</color>
+    <color name="colordialog">#dee1de</color>
+    <color name="colorwhitetext">#ffffff</color>
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorTextSetting">#1976d2</color>
+    <color name="colorRed">#d32f2f</color>
+    <color name="colorGray">#9e9e9e</color>
+    <color name="colorViolet">#7e57c2</color>
+    <color name="colorBrown">#a05445</color>
+    <color name="colorLightGreen">#48e2be</color>
+    <color name="colorBlue">#1976d2</color>
+    <color name="colorRedishyellow">#e65f21</color>
+    <color name="coloryellowish">#e58f0c</color>
+    <color name="colorOrangeyellow">#f7922c</color>
+    <color name="colorLightskyblue">#27d8d5</color>
+    <color name="colorGreenish"> #2eaf46</color>
+    <color name="colorLightgreen">#59db59</color>
+    <color name="coloryellow">#d3a32b</color>
+    <color name="colorRedorange"> #db290d</color>
+    <color name="colorBlack">#757575</color>
+    <color name="colorskyblue">#03a9f4</color>
+    <color name="colorLightgreenish">#81c784</color>
+    <color name="colorDarkgreenish">#237b27</color>
+    <color name="colorDarkorange">#e64a19</color>
+    <color name="colorDarkYellow">#e5b526</color>
+    <color name="colorLightBlue">#1e88e5</color>
+    <color name="colorLightOrange">#f4511e</color>
+    <color name="colorLightSkyblue">#0bdbea</color>
+    <color name="colorLightGray">#4e9cd6</color>
+    <color name="colorDarkSkyblue">#00bcd4</color>
+    <color name="colorLightViolet">#5a84b7</color>
+    <color name="colorOrange">#ff6d00</color>
+    <color name="colorYellow">#fbc02d</color>
+    <color name="colorPink">#e546bd</color>
+    <color name="colorGreenishyesllow">#9cc409</color>
+    <color name="colorvoilet">#277aa3</color>
+    <color name="colorskybluedark">#10b5ce</color>
+    <color name="colorgreen">#6fd684</color>
+    <color name="colorskyBluedark">#17bfd4</color>
+    <color name="colorromanblue">#109edd</color>
+
+    <color name="green">#4CAF50</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="gray_Tabbed_Text_color">#b5b5b5</color>
+    <color name="gray_text_color">#7f7f7f</color>
+    <color name="off_white">#f6f6f6</color>
+
+
+</resources>
