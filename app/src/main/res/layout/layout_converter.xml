@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    >
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,13 +16,14 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
+
             >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:weightSum="2">
                 <TextView
@@ -61,6 +62,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@color/colorTextBlack" />
 
@@ -68,6 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:orientation="horizontal"
                 android:weightSum="2">
                 <TextView
@@ -96,6 +101,8 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 >
 
                 <EditText
@@ -136,6 +143,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_gravity="center">
 
                 <TextView
@@ -158,6 +167,8 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_weight="2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
                     android:visibility="invisible"
                     android:background="@drawable/ic_converter_icon" />
 
@@ -180,6 +191,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:orientation="horizontal">
 
 
@@ -219,7 +232,21 @@
 
             </LinearLayout>
 
-
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adViewUnitConverter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    ads:adSize="SMART_BANNER"
+                    android:layout_marginTop="15dp"
+                    ads:adUnitId="@string/banner_ad_unit_id">
+                </com.google.android.gms.ads.AdView>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -227,6 +254,8 @@
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:weightSum="7"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 >
 

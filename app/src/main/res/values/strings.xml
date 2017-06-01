@@ -1,5 +1,5 @@
 <resources>
-
+    <string name="app_id">MagnetismConverter</string>
     <string name="app_name">Magnetism Converter</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -16,11 +16,11 @@
     <string name="heading_my_posts">My Posts</string>
     <string name="heading_my_top_posts">My Top Posts</string>
 
-    <string name="facebook_app_id">267933240296176</string>
-    <string name="fb_login_protocol_scheme">fb267933240296176</string>
+    <string name="facebook_app_id">111459782772303</string>
+    <string name="fb_login_protocol_scheme">fb111459782772303</string>
     <string name="action_logout">Logout</string>
     <string name="web_address">https://geniusnineapps.azurewebsites.net</string>
 
-    <string name="banner_ad_unit_id">ca-app-pub-6819279779322408/9653791770</string>
-    <string name="ads_app_id">ca-app-pub-6819279779322408~6700325377</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6819279779322408/5363192973</string>
+    <string name="ads_app_id">ca-app-pub-6819279779322408~3886459772</string>
 </resources>

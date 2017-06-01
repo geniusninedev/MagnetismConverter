@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/relativelayout">
 
@@ -67,10 +67,27 @@
         android:id="@+id/recyclerViewConverterList"
         android:layout_width="fill_parent"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
         android:background="@color/colordialog"
         android:layout_height="fill_parent">
     </android.support.v7.widget.RecyclerView>
     </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewUnitConverterList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </LinearLayout>
 </RelativeLayout>
 
