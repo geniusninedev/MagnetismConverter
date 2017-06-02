@@ -80,7 +80,7 @@ public class Login extends AppCompatActivity {
         email = (EditText) findViewById(R.id.edit_text_email_id);
         password = (EditText) findViewById(R.id.edit_text_password);
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#d81b60")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#8e918e")));
      //   getSupportActionBar().setDisplayHomeAsUpEnabled(true);
      //   getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setTitle("Login");

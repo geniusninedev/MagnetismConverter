@@ -57,7 +57,7 @@ public class SignUp extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mRef = FirebaseDatabase.getInstance().getReference().child("Users");
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#d81b60")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#8e918e")));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setTitle("Sign Up");
